@@ -31,7 +31,8 @@ flex direction: column
 body {
     background-color: hsl(212, 45%, 89%);
         /* todo: use google fonts */
-        font-family: 'century gothic', futura, sans-serif; 
+        font-family: 'century gothic', futura, sans-serif;
+    font-size: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -44,15 +45,19 @@ body {
     height: 98vh;
 }
 
+h3 {
+    margin-bottom: 0;;
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: auto;
+    max-width: 300px;
     /* align-items: center; */
     background-color: white;
     padding: 15px;
     border-radius: 20px;
+    box-shadow: 10px 10px 40px  hsl(220, 15%, 55%);
 }
 
 img {
