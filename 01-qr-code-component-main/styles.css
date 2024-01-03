@@ -33,6 +33,15 @@ body {
         /* todo: use google fonts */
         font-family: 'century gothic', futura, sans-serif; 
     text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* min-height: 100vh; */
+    /* max-height: 100vh; */
+    /* height: 100%; */
+    height: 98vh;
 }
 
 .card {
@@ -40,7 +49,27 @@ body {
     flex-direction: column;
     width: 300px;
     margin: auto;
+    /* align-items: center; */
     background-color: white;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 20px;
 }
 
+img {
+    border-radius: 10px;
+}
+
+.attribution {
+    /* take out of the stacking context; use absolute positioning */
+        background-color: aqua;
+    /* position: relative; */
+    /* top: 100px; */
+    /* position: absolute;  */
+    /* bottom: 0px; */
+    /* position: fixed; */
+    /* bottom: 0px; left: 50%; right: 50%; */
+}
+
+/* default style */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
