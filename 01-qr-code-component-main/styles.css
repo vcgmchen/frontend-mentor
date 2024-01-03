@@ -34,7 +34,7 @@ body {
         font-family: 'century gothic', futura, sans-serif; 
     text-align: center;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
@@ -60,12 +60,11 @@ img {
 }
 
 .attribution {
-    /* take out of the stacking context; use absolute positioning */
-        background-color: aqua;
+    /* take out of the stacking context; use absolute positioning: so it doesn't decenter .card */
     /* position: relative; */
     /* top: 100px; */
-    /* position: absolute;  */
-    /* bottom: 0px; */
+    position: absolute; 
+    bottom: 10px;
     /* position: fixed; */
     /* bottom: 0px; left: 50%; right: 50%; */
 }
