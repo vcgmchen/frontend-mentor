@@ -1,59 +1,30 @@
-/* 
-Design requirements
-Page
-* background color light blue 
-Card 
-* rounded corners
-* centered vertically on page
-* centered horizontally on page
-* ~ 20% page width
-* ~ 60% page height
-* shadow: slight top, slight left, heavier right, heavier bottom 
-* same dimensions whether in desktop or mobile view 
-Image 
-* rounded corners
-Text
-* centered
-* sans-serif
-Heading
-* larger
-* bold
-Subtext
-* smaller
-*/
-
-/* 
-Implementation
-Card - flex container 
-flex direction: column
-*/
-
 body {
     background-color: hsl(212, 45%, 89%);
-        /* todo: use google fonts */
-        font-family: 'century gothic', futura, sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 15px;
+    font-weight: 400;
     text-align: center;
     display: flex;
     flex-direction: column;
+    height: 98vh;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
     /* min-height: 100vh; */
     /* max-height: 100vh; */
     /* height: 100%; */
-    height: 98vh;
 }
 
 h3 {
-    margin-bottom: 0;;
+    margin-bottom: 0;
+    font-weight: 700;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    /* align-items: center; */
+    width: 90%;
     background-color: white;
     padding: 15px;
     border-radius: 20px;
